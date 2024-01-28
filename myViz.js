@@ -438,7 +438,7 @@ function incrementQueens(){
 
 function decrementQueens(){
     nEdge-=1
-    nEdge = Math.max(4,nEdge%9)
+    if(nEdge<4){nEdge = 8}
     resetBoards()    
 }
 
